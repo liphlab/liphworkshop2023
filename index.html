@@ -1,0 +1,97 @@
+---
+title: Home
+description: Home
+image: /images/asiago1.jpg
+bottom_image: http://unsplash.it/2000/1322?a=.png
+---
+
+<section class="hero" style="background-image: url({% include relative-src.html src=page.image %})">
+	<div class="inner-hero text-container">
+		<div class="hero-text-container">
+			<h1 class="editable" style = "text-shadow: 0px 0px 8px black;">LIPh Winter Workshop 2023</h1>
+			<p class="subtext editable" style = "text-shadow: 1px 1px 5px black;">19 February - 22 February, Asiago, Italy</p>
+
+		</div>
+	</div>
+	<div class="learn-more">
+		<a href="#learn-more" style = "text-shadow: 0px 0px 20px black;background-color: #696969; padding:10px; border-radius: 8px">Learn more <span class="arrow">&#x25BC;</span></a>&nbsp;&nbsp;&nbsp;&nbsp;
+		<a href="#venue" style = "text-shadow: 0px 0px 20px black;background-color: #696969; padding:10px; border-radius: 8px">Venue <span class="arrow">&#x25BC;</span></a>&nbsp;&nbsp;&nbsp;&nbsp;
+		<a href="#sponsors" style = "text-shadow: 0px 0px 20px black;background-color: #696969; padding:10px; border-radius: 8px">Sponsors<span class="arrow">&#x25BC;</span></a>
+	</div>
+</section>
+
+<div class="content">
+	<section class="info" id="learn-more">
+		<div class="container flex">
+			<div class="text">
+				<h2 class="editable">The workshop topics</h2>
+
+				<p class="editable" style = "text-align: justify;text-justify: inter-word;">
+					<ul>
+						<li>Critical transitions in biological systems</li>
+						<li>Stochastic population dynamics & Statistical Mechanics models in ecology</li>
+						<li>Whole brain models & collective behaviors in network of neurons</li>
+						<li>Robustness and adaptability in living systems & eco-evolutionary dynamics</li>
+					</ul>
+				</p>
+				<p class="editable" style = "text-align: justify;text-justify: inter-word;">
+					Living systems are characterized by the recurrent <strong>emergence of patterns</strong>: power-laws
+					distributions, long-range correlations and structured self-organization in living matter are
+					the norm, rather than the exception. All these features are also typical of systems poised near a <strong>critical point</strong>.
+					The great lesson from Physics is that criticality can emerge as a collective behaviour in a many-body system with simple
+					interactions and its characteristics depend only on few details, like the dimensionality or the symmetries.
+					<br><br>
+					One of the most striking feature of living systems is that they are structured as evolving systems were
+					interactions can turn-on or off, as well as strengthening and weakening,
+					reconfiguring the system connectivity. Thus, by rearranging both the structural and
+					functional topology, living interacting systems may demonstrate unique <strong>evolvability,
+					scalability and adaptability</strong> properties.
+					<br><br>
+					Among these systems, the brain is probably one of the most impressively complex and
+					has received a considerable amount of attention in recent years, aided by the vast amount
+					of experimental data available. The idea that the <strong>collective behavior of neurons</strong> might
+					emerge from a self-organized critical state has been widely studied, from its fundamental
+					mechanisms to its functional advantages, and it poses a fascinating question that is far
+					from being answered.
+					<br><br>
+					It is of crucial importance to make further steps in the understanding of the main properties
+					that simultaneously confer to these systems <strong>high level of adaptability, robustness and
+					optimality</strong>. If we can “learn” from evolution and unravel the basic principles then we would
+					be able to both better manage/supervise these systems and also design more optimal and
+					sustainable new systems.
+				</p>
+			</div>
+		</div>
+	</section>
+
+	<section class="info" id="venue"></section>
+	<section class="info">
+			<div class="container flex">
+					<div class="mapouter"><div class="gmap_canvas"><iframe width="600" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=q=Gaarten+Hotel+Benessere+e+Spa,+Gallio,+Province+of+Vicenza,+Italy&t=k&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://123movies-to.org">123movies</a><br><style>.mapouter{position:relative;text-align:right;height:500px;width:600px;}</style><a href="https://www.embedgooglemap.net">how to put google maps on website</a><style>.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:600px;}</style></div></div>				<div class="text">
+					<h2 class="editable">Venue and location</h2>
+					<p class="editable"style = "text-align: justify;text-justify: inter-word;">
+						The workshop will take place in Hotel Gaarten, Gallio (near Asiago), Italy.
+					</p>
+				</div>
+
+			</div>
+	</section>
+
+
+	<section class="pad" id="sponsors">
+		<div class="container">
+			<h2 class="editable">Sponsors</h2>
+			<ul class="staff">
+				{% for person in site.organizers %}
+					<li>
+						<div class="square-image" style="background-image: url({% include relative-src.html src=person.image_path %})"></div>
+						<div class="name"><a href="{{person.website}}">{{ person.name }}</a></div>
+						<div class="position">{{ person.position }}</div>
+					</li>
+				{% endfor %}
+			</ul>
+		</div>
+	</section>
+
+
+</div>

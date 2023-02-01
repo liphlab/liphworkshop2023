@@ -1,0 +1,26 @@
+left_links:
+  - name: LIPh Workshop 2023
+    link: /
+  - name: Program
+    link: /program/
+
+#right_links:
+#  - name:
+#    link: http://facebook.com/
+#    new_window: true
+#    social_icon: Facebook
+#  - name:
+#    link: http://twitter.com/
+#    social_icon: Twitter
+#    new_window: true
+#  - name:
+#    link: http://youtube.com/
+#    social_icon: YouTube
+#    new_window: true
+#  - name:
+#    link: http://plus.google.com/
+#    social_icon: Google Plus
+#    new_window: true
+#  - name:
+#    link: /feed.xml
+#    social_icon: RSS
